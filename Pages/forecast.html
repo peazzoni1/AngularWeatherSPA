@@ -1,0 +1,12 @@
+
+<a href="#/" class="btn btn-primary">Back to Home</a>
+
+<h1 class="col-md-6 col-md-offset-3">
+<h1>Forecast for {{ city }} </h1>
+<hr /> 
+<a href="#/forecast/2" class="btn btn-primary">2 Day</a>  <a href="#/forecast/5" class="btn btn-primary">5 day</a>  <a href="#/forecast/7" class="btn btn-primary">7 day</a>
+<hr />
+<div ng-repeat="w in weatherResult.list" class="col-md-6 col-md-offset-3">
+    <div id="box"> 
+            <h3 class="forecastData">{{ convertToDate(w.dt) | date: 'MMM d' }} - Day: {{ roundTemp(w.temp.day) }}&deg / Evening: {{roundTemp(w.temp.night)}}&deg</h3>
+</div>

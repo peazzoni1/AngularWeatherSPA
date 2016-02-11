@@ -1,0 +1,29 @@
+#body { 
+background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/341173/caroline_sada_landscape_small.jpg");
+background-repeat: no-repeat; 
+background-size: cover; 
+font-family: 'Work Sans';
+}
+
+#weatherData {
+  text-align: center;
+  color: #1a72aa;
+  font-size: 80px;
+}
+
+i {
+  color: #f88601;
+}
+
+.forecastData { 
+text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+
+}
+
+#box { 
+height: 50px; 
+width: 650px; 
+background-color: rgba(107, 216, 149, 0.77);
+}
